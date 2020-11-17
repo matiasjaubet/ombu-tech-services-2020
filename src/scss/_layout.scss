@@ -1,0 +1,39 @@
+html {
+	font-family: $primary-font;
+}
+.container {
+	padding-left: 15px;
+	padding-right: 15px;
+	@include border-box;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+// 768px
+@media all and (min-width: $screen-portrait) {
+	.container {
+		@include center;
+		max-width: 750px;
+	}
+}
+
+// 992px
+@media all and (min-width: $screen-landscape) {
+	.container {
+		max-width: 970px;
+	}
+}
+
+// 1200px
+@media all and (min-width: $screen-desktop) {
+	.container {
+		max-width: 1170px;
+	}
+}
