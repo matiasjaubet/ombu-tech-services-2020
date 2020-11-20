@@ -1,11 +1,28 @@
-
-
+.button {
+    display: inline-block;
+    color: $brand-primary;
+    border: 2px solid $brand-primary;
+    text-transform: uppercase;
+    padding: 20px 30px;
+    text-decoration: none;
+    font-weight: 600;
+    &:hover {
+        background: $brand-primary;
+        color: white;
+    }
+}
+.content-rayas {
+    text-align: center;
+}
 // 768px
 @media all and (min-width: $screen-portrait) {
 }
 
 // 992px
 @media all and (min-width: $screen-landscape) {
+    .button {
+        font-size: 20px;
+    }
 }
 
 // 1200px

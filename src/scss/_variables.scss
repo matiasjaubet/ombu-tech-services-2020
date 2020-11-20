@@ -2,14 +2,15 @@ $screen-portrait      :  768px;
 $screen-landscape     :  992px;
 $screen-desktop       :  1200px;
 
-$brand-primary        : green;
-$brand-secondary      : blue;
+$brand-primary        : #2045f4;
+$brand-secondary      : #01e399;
 
-$primary-font         : Tahoma, arial, sans-serif;
-$secondary-font       : Georgia, serif;
+$primary-font         : 'Poppins', sans-serif;
+$secondary-font       : 'Inter', sans-serif;
+$tertiary-font        : 'Sora', sans-serif;
 
 $gray-light           : #f4f4f4;
 $gray                 : #AAA;
-$gray-dark            : #282828;
+$gray-dark            : #333;
 
 $font-color           : #5a5c62;

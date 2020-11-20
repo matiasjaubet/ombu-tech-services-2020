@@ -1,0 +1,21 @@
+.box-home-especializamos {
+    h3 {
+        margin: 30px 0 40px 0;
+        text-align: center;
+        color: $gray-dark;
+        max-width: 700px;
+        @include center;
+    }
+}
+
+// 768px
+@media all and (min-width: $screen-portrait) {
+}
+
+// 992px
+@media all and (min-width: $screen-landscape) {
+}
+
+// 1200px
+@media all and (min-width: $screen-desktop) {
+}

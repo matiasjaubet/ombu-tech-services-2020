@@ -9,7 +9,9 @@ h1, h2, h3, h4, h5, h6, p, span, a, small, ul, ol, li {
 	-moz-osx-font-smoothing: grayscale;
 }
 h1, h2, h3, h4, h5, h6 {
-	font-family: $secondary-font;
+	font-family: $primary-font;
+	font-weight: 600;
+	color: $brand-primary;
 }
 p {
 	font-size: 1em;
@@ -107,6 +109,7 @@ b, strong {
 i {
 	font-style: italic;
 }
+
 // 768px
 @media all and (min-width: $screen-portrait) {
 	p {

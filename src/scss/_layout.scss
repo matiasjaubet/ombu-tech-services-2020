@@ -16,6 +16,12 @@ html {
 .cf:after {
     clear: both;
 }
+.gris {
+	color: $gray-dark;
+}
+.center {
+	text-align: center;
+}
 // 768px
 @media all and (min-width: $screen-portrait) {
 	.container {

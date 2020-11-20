@@ -1,5 +1,29 @@
-
-
+.header {
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    @include border-box;
+    z-index: 99;
+    @include transition;
+}
+.brand {
+    fill: white;
+    max-width: 200px;
+    @include transition;
+}
+.fixed-header {
+    -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+    background: white;
+    .brand {
+        fill: $brand-primary;
+    }
+    .toggle {
+        margin-top: 5px;
+    }
+}
 // 768px
 @media all and (min-width: $screen-portrait) {
 }

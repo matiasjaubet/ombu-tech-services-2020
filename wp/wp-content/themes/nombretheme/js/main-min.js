@@ -1,1 +1,0 @@
-"use strict";var numbers2=[10,20,30,40,50],numbersTriple=numbers2.map((function(r){return 3*r}));

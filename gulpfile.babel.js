@@ -31,7 +31,7 @@ const cssPlugins = [
     autoprefixer()
 ]
 
-const wptheme = './wp/wp-content/themes/nombretheme'
+const wptheme = './wp/wp-content/themes/ombu2020'
 
 gulp.task('html-min', () => {
     return gulp  
@@ -49,7 +49,6 @@ gulp.task('html-min', () => {
 gulp.task('styles', () => {
     return gulp  
         .src('./src/css/*.css')
-        .pipe(concat('styles-min.csss'))
         .pipe(postcss(cssPlugins))
         .pipe(gulp.dest(wptheme + '/css'))
         .pipe(stream())
@@ -77,8 +76,7 @@ gulp.task('clean', () => {
 
 gulp.task('babel', () => {
   return gulp  
-        .src('./src/js/*.js')
-        .pipe(concat('main-min.js'))
+        .src('./src/js/main.js')
         .pipe(babel())  
         .pipe(terser())
         .pipe(gulp.dest(wptheme + '/js'))
