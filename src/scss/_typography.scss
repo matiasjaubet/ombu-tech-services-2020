@@ -2,7 +2,8 @@ body {
 	font-size: 100%;
 }
 body, h1, h2, h3, h4, h5, h6 {
- 	font-size-adjust: 0.5;
+	 font-size-adjust: 0.5;
+	 color: $font-color;
 }
 h1, h2, h3, h4, h5, h6, p, span, a, small, ul, ol, li {
 	-webkit-font-smoothing: antialiased;
@@ -15,7 +16,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 p {
 	font-size: 1em;
-	line-height: 1.25;
+	line-height: 1.4em;
 	margin-bottom: 20px;
 }
 h1 {
@@ -32,6 +33,9 @@ h3 {
   	font-size: 1.375em;
   	line-height: 1.13636364;
 	margin-bottom: 16px;
+	span {
+		color: $font-color;
+	}
 }
 h4 {
   	font-size: 1.125em;
@@ -154,7 +158,11 @@ i {
 	h3 {
     	font-size: 1.75em;
     	line-height: 1.25;
-  	}
+	  }
+	  h4 {
+		  font-size: 1em;
+		  line-height: 1.15em;
+	  }
 }
 
 // 1200px

@@ -148,7 +148,7 @@
 		@include transition;
 		li {
 			a {
-                font-family: $secondary-font ;
+                font-family: $primary-font ;
 				display: inline-block;
 				padding: 10px 0;
 				color: white;
@@ -269,7 +269,7 @@
 					padding-left: 0!important;
 				}
                 a {
-                    font-family: $secondary-font ;
+                    font-family: $primary-font ;
                     display: inline-block;
 					padding: 10px 0;
 					letter-spacing: 1px;
@@ -331,31 +331,19 @@
 	.toggle {
 		display: none;
 	}
-	.fixed-header {
-		.navbar-desktop {
-			ul {
-				li {
-					a {
-						font-size: 13px;
-						padding: 5px 20px!important;
-					}
-				}
-			}
-		}
+	.english {
+		display: inline-block;
+		-moz-transform: rotate(90deg);
+		-webkit-transform: rotate(90deg);
+		-o-transform: rotate(90deg);
+		-ms-transform: rotate(90deg);
+		transform: rotate(90deg);
+		color: $brand-primary;
+		font-size: 12px;
+		position: absolute;
+		right: -20px;
+		top: 85px;
 	}
-.english {
-	display: inline-block;
-	-moz-transform: rotate(90deg);
-	-webkit-transform: rotate(90deg);
-	-o-transform: rotate(90deg);
-	-ms-transform: rotate(90deg);
-	transform: rotate(90deg);
-	color: $brand-primary;
-	font-size: 12px;
-	position: absolute;
-	right: -20px;
-	top: 85px;
-}
 
 }
 
@@ -366,14 +354,5 @@
 
 // 1200px
 @media all and (min-width: $screen-desktop) {
-	.navbar-desktop {
-		ul {
-			li {
-				a {
-					font-size: 16px;
-					padding: 25px 10px; 
-				}
-			}
-		}
-	}
+	
 }

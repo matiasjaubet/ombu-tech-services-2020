@@ -1,11 +1,43 @@
-
-
+.footer {
+    background: #0054e4;
+    padding: 60px 0 40px 0;
+    * {
+        color: white;
+    }
+}
+.footer_box {
+    h4 {
+        color: white;
+    }
+    p {
+        padding-left: 30px;
+        position: relative;
+        font-size: 14px;
+        img {
+            position: absolute;
+            left: 0;
+            top: 2px;
+            width: 15px;
+        }
+    }
+    &.socials {
+        p {
+            display: inline-block;
+            padding-right: 20px;
+        }
+    }
+}
 // 768px
 @media all and (min-width: $screen-portrait) {
 }
 
 // 992px
 @media all and (min-width: $screen-landscape) {
+    .footer {
+        .container {
+            max-width: 800px;
+        }
+    }
 }
 
 // 1200px

@@ -5,12 +5,12 @@ $screen-desktop       :  1200px;
 $brand-primary        : #2045f4;
 $brand-secondary      : #01e399;
 
-$primary-font         : 'Poppins', sans-serif;
-$secondary-font       : 'Inter', sans-serif;
+$primary-font         : 'Inter', sans-serif;
+$secondary-font       : 'Poppins', sans-serif;
 $tertiary-font        : 'Sora', sans-serif;
 
 $gray-light           : #f4f4f4;
 $gray                 : #AAA;
 $gray-dark            : #333;
 
-$font-color           : #5a5c62;
+$font-color           : $gray-dark;

@@ -1,0 +1,106 @@
+.hero {
+    padding: 100px 0 60px 0;
+    background: $brand-primary;
+    position: relative;
+    h1 {
+        color: white;
+        padding-left: 100px;
+    }
+    .medio-circulo,
+    .circulo,
+    .circulo-border {
+        position: absolute;
+        left: -10px;
+        top: 30%;
+        width: 100px;
+        z-index: 10;
+    }
+    .medio-circulo {
+        path {
+            fill: $brand-secondary;
+        }
+    }
+    .segundo-circulo {
+        display: none;
+        width: 350px;
+        top: -240px;
+        right: 0;
+        position: absolute;
+        z-index: 10;
+        circle {
+            fill: $brand-secondary;
+        }
+    }
+    .circulo {
+        width: 85px;
+        z-index: 9;
+        top: 24%;
+        left: 0px;
+        circle {
+            fill: white;
+        }
+    }
+    .circulo-border {
+        z-index: 8;
+        width: 60px;
+        top: 70%;
+        left: 20px;
+        circle {
+            fill:none;
+            stroke: $brand-secondary;
+            stroke-width: 0.7364;
+            stroke-miterlimit: 10;
+        }
+    }
+}
+.hero-green {
+    @extend .hero;
+    background: $brand-secondary;
+    .medio-circulo {
+        path {
+            fill: $brand-primary;
+        }
+    }
+    .segundo-circulo {
+        circle {
+            fill: white;
+        }
+    }
+}
+// 768px
+@media all and (min-width: $screen-portrait) {
+    .hero {
+        padding: 120px 0 80px 0;
+    }
+}
+
+// 992px
+@media all and (min-width: $screen-landscape) {
+    .hero {
+        .segundo-circulo {
+            display: block;
+        }
+        .medio-circulo {
+            width: 120px;
+            top: 60%;
+        }
+        .circulo {
+            width: 120px;
+            top: 50%;
+            left: 30px;
+        }
+        .circulo-border {
+            z-index: 10;
+            left: 80px;
+        }
+    }
+}
+
+// 1200px
+@media all and (min-width: $screen-desktop) {
+    .hero {
+        h1 {
+            padding-left: 140px;
+        }
+    }
+}

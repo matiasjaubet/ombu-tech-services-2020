@@ -32,6 +32,29 @@
         
     }
 }
+.raya-abajo-chica {
+    &:after {
+        content: "";
+        width: 1px;
+        height: 30px;
+        background-color: $gray;
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        
+    }
+}
+.raya-abajo-grande {
+    &:after {
+        content: "";
+        width: 1px;
+        height: 100px;
+        background-color: $gray;
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
 .raya-arriba {
     &:before {
         content: "";
@@ -43,8 +66,35 @@
         margin: 0 auto;
         
     }
+    &.grande {
+        &:before {
+            content: "";
+            height: 100px;
+        }
+    }
+    &.muy-grande {
+        &:before {
+            content: "";
+            height: 200px;
+        }
+    }
 }
-
+.raya-al-medio {
+    position: relative;
+    &:before {
+        content: "";
+        width: 1px;
+        height: 100%;
+        background-color: $gray;
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        left: 50%;
+        position: absolute;
+        top: 0;
+        z-index: 0;
+    }
+}
 // 768px
 @media all and (min-width: $screen-portrait) {
     .raya-desktop {
@@ -86,4 +136,29 @@
 
 // 1200px
 @media all and (min-width: $screen-desktop) {
+    
+    .box-home-especializamos {
+        .raya-desktop {
+            width: 70%;
+            &:before {
+                content: "";
+                left: auto;
+                right: 0;
+            }
+            i {
+                height: 30px;
+                left: 33.33333%;
+                top: 0;
+            }
+            span {
+                width: 1px;
+                height: 30px;
+                background-color: $gray;
+                display: block;
+                position: absolute;
+                left: 66.6666%;
+                top: 0;
+            }
+        }
+    }
 }

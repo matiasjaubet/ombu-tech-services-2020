@@ -1,0 +1,41 @@
+.box-prensa {
+    text-align: left;
+    margin-bottom: 40px;
+    img {
+        width: 100%;
+    }
+    small {
+        color: #999;
+        font-size: 12px;
+    }
+    h2 {
+        color: black;
+        font-size: 15px;
+        margin: 5px 0;
+    }
+    p {
+        font-size:  14px;
+        margin-bottom: 10px;
+    }
+    a {
+        font-weight: 600;
+        text-decoration: none;
+        letter-spacing: 1px;
+        font-size: 14px;
+    }
+    .caption {
+        padding: 15px;
+    }
+}
+
+// 768px
+@media all and (min-width: $screen-portrait) {
+}
+
+// 992px
+@media all and (min-width: $screen-landscape) {
+}
+
+// 1200px
+@media all and (min-width: $screen-desktop) {
+}

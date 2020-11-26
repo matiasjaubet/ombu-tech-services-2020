@@ -1,0 +1,52 @@
+.box-home-mapa {
+    text-align: center;
+    .container {
+        padding-bottom: 80px;
+        &.raya-arriba {
+            &:before {
+                content: "";
+                width: 1px;
+                height: 100px;
+                background-color: $gray;
+                display: block;
+                text-align: center;
+                margin: 0 auto;
+                
+            }
+        }
+        &.raya-abajo {
+            &:after {
+                content: "";
+                width: 1px;
+                height: 100px;
+                background-color: $gray;
+                display: block;
+                text-align: center;
+                margin: 0 auto;
+                
+            }
+        }
+    }
+    h3 {
+        text-align: center;
+    }
+}
+
+// 768px
+@media all and (min-width: $screen-portrait) {
+}
+
+// 992px
+@media all and (min-width: $screen-landscape) {
+    .box-home-mapa {
+        .container {
+            .row {
+                margin-top: 80px;
+            }
+        }
+    }
+}
+
+// 1200px
+@media all and (min-width: $screen-desktop) {
+}

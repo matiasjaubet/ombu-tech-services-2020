@@ -102,7 +102,9 @@
 
 // SLIDER EXPERTISE
 
-.owl-expertise {
+.owl-expertise,
+.owl-clientes,
+.owl-biometria {
     .owl-dots {
         text-align: center;
         padding: 10px 0;
@@ -119,6 +121,16 @@
             }
         }
     }
+}
+.owl-clientes {
+    .owl-dots {
+        margin: 30px 0 0 0;
+    }
+}
+
+.owl-biometria {
+    max-width: 700px;
+    @include center;
 }
 
 // 768px

@@ -1,0 +1,30 @@
+.box-biometria {
+    .raya-desktop {
+        width: 70%;
+        // max-width: 800px;
+        i {
+            left: 50%;
+        }
+    }
+}
+
+.compatibles {
+    p {
+        max-width: 500px;
+        @include center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+// 768px
+@media all and (min-width: $screen-portrait) {
+}
+
+// 992px
+@media all and (min-width: $screen-landscape) {
+}
+
+// 1200px
+@media all and (min-width: $screen-desktop) {
+}

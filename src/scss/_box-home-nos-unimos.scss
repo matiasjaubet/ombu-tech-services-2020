@@ -1,0 +1,38 @@
+.box-home-nos-unimos {
+    h3 {
+        max-width: 500px;
+        @include center;
+        padding-top: 30px;
+    }
+    a {
+        display: block;
+        max-width: 200px;
+        margin: 20px 0;
+        @include center;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+// 600px
+@media all and (min-width: 600px) {
+    .box-home-nos-unimos {
+        text-align: center;
+        a {
+            display: inline-block;
+            vertical-align: middle;
+            max-width: 180px;
+            margin: 20px;
+        }
+    }
+}
+
+// 992px
+@media all and (min-width: $screen-landscape) {
+}
+
+// 1200px
+@media all and (min-width: $screen-desktop) {
+}

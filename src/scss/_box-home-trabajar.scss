@@ -1,0 +1,69 @@
+.box-home-trabajar {
+    position: relative;
+    background: $brand-primary;
+    padding: 90px 20px;
+    * {
+        color: white;
+    }
+    ul {
+        margin: 0;
+        padding-left: 0;
+    }
+    img {
+        display: none;
+    }
+    h3 {
+        br {
+            display: none;
+        }
+    }
+}
+
+// 768px
+@media all and (min-width: $screen-portrait) {
+}
+
+// 992px
+@media all and (min-width: $screen-landscape) {
+
+}
+
+// 1200px
+@media all and (min-width: $screen-desktop) {
+    .box-home-trabajar {
+        &:after {
+            content: "";
+            display: block;
+            width: 400px;
+            height: 100%;
+            background: white;
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+        .container {
+            max-width: 900px;
+            @include center;
+        }
+        ul {
+            max-width: 450px;
+        }
+        h3 {
+            br {
+                display: block;
+            }
+        }
+
+        img {
+            display: block;
+            position: absolute;
+            right: 18%;
+            top: -75px;
+            width: 338px;
+            z-index: 9;
+            height: auto;
+
+        }
+    }
+}

@@ -24,12 +24,91 @@
         margin-top: 5px;
     }
 }
+
 // 768px
 @media all and (min-width: $screen-portrait) {
+    .header {
+        // BLUE
+        &.blue {
+            .navbar-only {
+                ul > li > a {
+                    color: white;
+                }
+                .sub-menu {
+                    > li > a {
+                        color: $gray-dark;
+                    }
+                }
+            }
+            .destacado {
+                a {
+                    background: white;
+                    color: $brand-primary!important;
+                    &:hover {
+                        background: darken($brand-secondary, 15%);
+                        color: white!important;
+                    }
+                }
+            }
+            .english {
+                color: white;
+            }
+        }
+        // GREEN
+        &.green {
+            .brand {
+                fill: $brand-primary;
+            }
+            .navbar-only {
+                ul > li > a {
+                    color: $brand-primary;
+                }
+                .sub-menu {
+                    > li > a {
+                        color: $gray-dark;
+                    }
+                }
+            }
+            .destacado {
+                a {
+                    background: $brand-secondary;
+                    color: white!important;
+                    &:hover {
+                        background: darken($brand-secondary, 15%);
+                        color: white!important;
+                    }
+                }
+            }
+            .english {
+                color: white;
+            }
+        }
+        &.fixed-header {
+            .navbar-only {
+                ul > li > a {
+                    color: $brand-primary;
+                }
+            }
+            .destacado {
+                a {
+                    background: $brand-secondary;
+                    color: white!important;
+                    &:hover {
+                        background: darken($brand-secondary, 15%);
+                        color: white!important;
+                    }
+                }
+            }
+            .english {
+                color: $brand-primary;
+            }
+        }
+    }
 }
 
 // 992px
 @media all and (min-width: $screen-landscape) {
+    
 }
 
 // 1200px

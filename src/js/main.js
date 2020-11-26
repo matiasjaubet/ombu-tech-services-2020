@@ -28,6 +28,39 @@ $('.owl-expertise').owlCarousel({
     }
 })
 
+$('.owl-clientes').owlCarousel({
+    loop:true,
+    margin: 20,
+    nav: false,
+    responsive:{
+        0:{
+            items:2
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:6
+        }
+    }
+})
+$('.owl-biometria').owlCarousel({
+    loop:true,
+    margin: 20,
+    nav: false,
+    responsive:{
+        0:{
+            items:2
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
+
 //PRELOADER
 
 window.onload = function(){

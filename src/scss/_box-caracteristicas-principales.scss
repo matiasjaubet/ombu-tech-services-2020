@@ -1,0 +1,79 @@
+.box-caracteristicas-principales {
+    background: #171737;
+    padding: 50px 0;
+    h3 {
+        color: #7670ff;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    ul {
+        color: white;
+    }
+    img {
+        max-width: 320px;
+        margin: 0 auto;
+        display: block;
+    }
+    &.en-biometria {
+        li {
+            margin-bottom: 15px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+// 768px
+@media all and (min-width: $screen-portrait) {
+    .box-caracteristicas-principales {
+        h3 {
+            text-align: left;
+            margin-bottom: 30px;
+            padding-left: 150px;
+            font-size: 24px;
+        }
+        figure {
+            position: relative;
+        }
+        img {
+            position: absolute;
+            top: 0;
+            right: 0;
+            max-width: 280px;
+        }
+        &.en-biometria {
+            img {
+                top: 30px;
+                max-width: 320px;
+            }
+        }
+    }
+}
+
+// 992px
+@media all and (min-width: $screen-landscape) {
+    .box-caracteristicas-principales {
+        height: 300px;
+        ul {
+            max-width: 80%;
+        }
+        img {
+            top: -15px;
+        }
+    }
+}
+
+// 1200px
+@media all and (min-width: $screen-desktop) {
+    .box-caracteristicas-principales {
+        h3 {
+            padding-left: 300px;
+        }
+        &.en-biometria {
+            img {
+                top: 0;
+            }
+        }
+    }
+}

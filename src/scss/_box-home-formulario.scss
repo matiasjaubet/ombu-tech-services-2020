@@ -1,0 +1,55 @@
+.box-home-formulario {
+    background: #171737;
+    padding: 60px 0;
+    text-align: center;
+    h3 {
+        color: white;
+        margin-bottom: 40px;
+    }
+}
+.box-home-formulario__datos {
+    text-align: left;
+    .telefonos,
+    .emails {
+        position: relative;
+        padding-left: 40px;
+        display: inline-block;
+        vertical-align: top;
+        h5, p {
+            color: white;
+        }
+        p {
+            font-size: 14px;
+            line-height: 1.4em;
+        }
+    }
+    img {
+        width: 18px;
+        height: auto;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .emails {
+        img {
+            width: 21px;
+        }
+    }
+}
+// 768px
+@media all and (min-width: $screen-portrait) {
+}
+
+// 992px
+@media all and (min-width: $screen-landscape) {
+    .box-home-formulario__datos {
+        .telefonos,
+        .emails {
+            display: block;
+        }
+    }
+}
+
+// 1200px
+@media all and (min-width: $screen-desktop) {
+}
