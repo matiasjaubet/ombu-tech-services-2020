@@ -24,6 +24,27 @@
     }
 }
 
+.box-caracteristicas-principales-pagos {
+    background: #171737;
+    padding: 50px 0;
+    h3 {
+        color: #7670ff;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    p {
+        color: white;
+    }
+    ul {
+        color: white;
+    }
+    img {
+        max-width: 320px;
+        margin: 0 auto;
+        display: block;
+    }
+}
+
 // 768px
 @media all and (min-width: $screen-portrait) {
     .box-caracteristicas-principales {
@@ -49,6 +70,23 @@
             }
         }
     }
+
+    .box-caracteristicas-principales-pagos {
+        h3 {
+            text-align: left;
+            margin-bottom: 30px;
+            font-size: 24px;
+        }
+        figure {
+            position: relative;
+        }
+        img {
+            position: absolute;
+            top: 0;
+            right: 0;
+            max-width: 280px;
+        }
+    }
 }
 
 // 992px
@@ -62,18 +100,20 @@
             top: -15px;
         }
     }
+
+    .box-caracteristicas-principales-pagos {
+        height: 470px;
+        ul {
+            max-width: 80%;
+        }
+        img {
+            max-width: 330px;
+            top: -15px;
+        }
+    }
 }
 
 // 1200px
 @media all and (min-width: $screen-desktop) {
-    .box-caracteristicas-principales {
-        h3 {
-            padding-left: 300px;
-        }
-        &.en-biometria {
-            img {
-                top: 0;
-            }
-        }
-    }
+
 }
