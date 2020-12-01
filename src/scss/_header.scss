@@ -24,6 +24,11 @@
         margin-top: 5px;
     }
 }
+.header.gray {
+    .brand {
+        fill: $brand-primary;
+    }
+}
 
 // 768px
 @media all and (min-width: $screen-portrait) {

@@ -78,6 +78,13 @@
             height: 200px;
         }
     }
+    &.chica {
+        &:before {
+            content: "";
+            height: 30px;
+            margin-bottom: 10px;
+        }
+    }
 }
 .raya-al-medio {
     position: relative;
@@ -93,6 +100,11 @@
         position: absolute;
         top: 0;
         z-index: 0;
+    }
+}
+.raya-desktop {
+    &.cuatro {
+        display: none;
     }
 }
 // 768px
@@ -130,6 +142,23 @@
         &.tres {
             i {
                 left: 50%!important;
+            }
+        }
+        &.cuatro {
+            display: block;
+            i {
+                left: 33.333%;
+                height: 30px;
+                top: 0;
+            }
+            span {
+                width: 1px;
+                height: 30px;
+                background-color: $gray;
+                display: block;
+                position: absolute;
+                left: 70%;
+                top: 0;
             }
         }
     }

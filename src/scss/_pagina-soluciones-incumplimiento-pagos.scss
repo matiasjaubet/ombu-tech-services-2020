@@ -21,6 +21,13 @@
         }
     }
 }
+.box-verde {
+    @extend .box-gris;
+    background: #1ad5b1;
+    img.brand-alianza {
+        width: 180px!important;
+    }
+}
 
 // 768px
 @media all and (min-width: $screen-portrait) {

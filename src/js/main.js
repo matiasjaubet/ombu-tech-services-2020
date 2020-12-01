@@ -10,6 +10,14 @@ $('.owl-home').owlCarousel({
     animateIn: 'fadeIn'
 })
 
+$('.owl-mapas').owlCarousel({
+    loop:true,
+    margin:0,
+    nav:false,
+    autoplay: true,
+    items: 1
+})
+
 $('.owl-expertise').owlCarousel({
     loop:true,
     margin:0,
@@ -95,3 +103,35 @@ $('.navbar-only ul > li > a').click(function() {
         $(".navbar-only .sub-menu").slideToggle();
     }
  });
+
+ // MAPAS
+
+$("#mapa2, #mapa3, #mapa4").hide();
+
+$("#for-mapa1").on( "click", function() {
+    $(this).addClass('current-mapa');
+    $("#for-mapa2, #for-mapa3, #for-mapa4").removeClass('current-mapa');
+    $("#mapa2, #mapa3, #mapa4").hide();
+    $("#mapa1").fadeIn();
+});
+
+$("#for-mapa2").on( "click", function() {
+    $(this).addClass('current-mapa');
+    $("#for-mapa1, #for-mapa3, #for-mapa4").removeClass('current-mapa');
+    $("#mapa1, #mapa3, #mapa4").hide();
+    $("#mapa2").fadeIn();
+});
+
+$("#for-mapa3").on( "click", function() {
+    $(this).addClass('current-mapa');
+    $("#for-mapa2, #for-mapa1, #for-mapa4").removeClass('current-mapa');
+    $("#mapa2, #mapa1, #mapa4").hide();
+    $("#mapa3").fadeIn();
+});
+
+$("#for-mapa4").on( "click", function() {
+    $(this).addClass('current-mapa');
+    $("#for-mapa1, #for-mapa3, #for-mapa2").removeClass('current-mapa');
+    $("#mapa1, #mapa3, #mapa2").hide();
+    $("#mapa4").fadeIn();
+});

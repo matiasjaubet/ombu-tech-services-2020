@@ -6,6 +6,17 @@
         color: white;
         margin-bottom: 40px;
     }
+    &.en-contactenos {
+        background: transparent;
+        h3 {
+            color: $brand-primary;
+        }
+        .box-home-formulario__datos {
+            h5, p {
+                color: $font-color;
+            }
+        }
+    }
 }
 .box-home-formulario__datos {
     text-align: left;

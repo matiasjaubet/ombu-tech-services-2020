@@ -1,0 +1,282 @@
+.box-soluciones-financieras {
+    h3 {
+        text-align: center;
+        max-width: 650px;
+        @include center;
+        padding: 20px 0;
+        &:after {
+            content: "";
+            margin-top: 15px;
+        }
+    }
+}
+
+.content-tabla {
+    overflow: scroll;
+}
+
+.table-servicios-financieros {
+    text-align: left;
+    width: 1000px;
+    @include center;
+    tr:nth-child(even) {
+        background: $gray-light;
+    }
+    td, th {
+        width: 100px;
+    }
+    td {
+        position: relative;
+        height: 35px;
+        span {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            border-radius: 0 40px 40px 0;
+            &.celeste {
+                background: #45cafc;
+            }
+            &.azul {
+                background: #171836;
+            }
+            &.marino {
+                background: #254df0;
+            }
+            &.verde {
+                background: #25e29b;
+            }
+        }
+    }
+    .headers {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 14px;
+        letter-spacing: 2px;
+        @include border-box;
+        padding-bottom: 20px;
+        color: #45cafc;
+        img {
+            max-width: 40px;
+        }
+        span {
+            padding: 10px 0;
+            font-size: 12px;
+            display: block;
+        }
+    }
+}
+table.table-servicios-financieros > tbody > tr:nth-child(1) > th:nth-child(2),
+table.table-servicios-financieros > tbody > tr:nth-child(1) > th:nth-child(3) {
+    .headers {
+        color: #171836;
+    }
+}
+table.table-servicios-financieros > tbody > tr:nth-child(1) > th:nth-child(4),
+table.table-servicios-financieros > tbody > tr:nth-child(1) > th:nth-child(5) {
+    .headers {
+        color: #254df0;
+    }
+}
+table.table-servicios-financieros > tbody > tr:nth-child(1) > th:nth-child(6) {
+    .headers {
+        color: #25e29b;
+    }
+}
+table.table-servicios-financieros > tbody > tr:nth-child(1) > th:nth-child(1) {
+    .headers {
+        position: relative;
+        &:before {
+            content: "";
+            width: 1px;
+            height: 30px;
+            position: absolute;
+            border-right: 1px dashed #171836; 
+            right: 0;
+            bottom: 0;
+        }
+    }
+}
+table.table-servicios-financieros > tbody > tr:nth-child(1) > th:nth-child(3) {
+    .headers {
+        position: relative;
+        &:before {
+            content: "";
+            width: 1px;
+            height: 30px;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            border-right: 1px dashed #254df0; 
+        }
+    }
+}
+table.table-servicios-financieros > tbody > tr:nth-child(1) > th:nth-child(5) {
+    .headers {
+        position: relative;
+        &:before {
+            content: "";
+            width: 1px;
+            height: 30px;
+            position: absolute;
+            border-right: 1px dashed #25e29b; 
+            right: 0;
+            bottom: 0;
+        }
+    }
+}
+
+.bajada {
+    letter-spacing: 2px;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 1.2em;
+    display: block;
+    padding: 5px 0 0 5px;
+    @include border-box;
+    &.celestetxt {
+        color: #45cafc;
+    }
+    &.azultxt {
+        color: #171836;
+    }
+    &.marinotxt {
+        color: #254df0;
+    }
+    &.verdetxt {
+        color: #25e29b;
+    }
+}
+.border-right {
+    border-right: 1px dashed #254df0;
+}
+.border-right-green {
+    border-right: 1px dashed #25e29b;
+}
+.border-left {
+    border-left: 1px dashed #171836;
+}
+.box-mas-soluciones {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 320px;
+    @include center;
+    align-items: center;
+    li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 320px;
+        width: 100%;
+        color: $brand-primary;
+        text-align: center;
+        font-weight: 600;
+        background: #e6e6e8;
+        div {
+            font-size: 18px;
+            padding: 0 30px;
+            span {
+                display: block;;
+                font-size: 20px;
+            }
+            img {
+                max-width: 80px;
+                margin: 20px 0 15px 0;
+            }
+        }
+    }
+    li:nth-child(even) {
+        background: $brand-primary;
+        div {
+
+            color: #1ad5b1;
+        }
+    }
+}
+
+// 768px
+@media all and (min-width: $screen-portrait) {
+    .box-soluciones {
+        .raya-desktop {
+            margin-top: -50px;
+        }
+    }
+    .mas-soluciones {
+        margin-top: -70px;
+        padding-bottom: 80px;
+        .raya-desktop.cuatro {
+            i, span {
+                display: none;
+            }
+        }
+    }
+    .box-mas-soluciones {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 100%;
+        li {
+            background: transparent;
+            width: 50%;
+            div {
+                font-size: 12px;
+                background: #e6e6e8;
+                width: 250px;
+                height: 250px;
+                padding: 30px;
+                @include border-box;
+                figure {
+                    height: 120px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+            }
+        }
+        li:nth-child(even) {
+            background: transparent;
+            div {
+                background: $brand-primary;
+                color: #1ad5b1;
+            }
+        }
+    }
+}
+// 1200px
+@media all and (min-width: $screen-desktop) {
+
+    .content-tabla {
+        overflow: initial;
+    }
+
+    .box-mas-soluciones {
+        margin-top: -30px;
+        li {
+            width: 25%;
+            div {
+                font-size: 18px;
+                width: 280px;
+                height: 280px;
+            }
+        }
+    }
+    .box-soluciones {
+        .raya-desktop {
+            max-width: 79%;
+        }
+    }
+    .mas-soluciones {
+        .raya-desktop.cuatro {
+            width: 79%;
+            i, span {
+                display: block;
+            }
+        }
+    }
+}

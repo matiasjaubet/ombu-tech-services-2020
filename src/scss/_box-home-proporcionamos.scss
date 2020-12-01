@@ -18,6 +18,7 @@
             margin: 30px 0;
         }
     }
+
 }
 .box-icono-copy {
     padding: 0 30px;
@@ -90,6 +91,14 @@
             margin-bottom: 30px;
         }    
     }
+
+    .box-home-proporcionamos {
+        &.en-prensa {
+            .raya-desktop {
+                display: none;
+            }
+        }
+    }
     
 }
 
@@ -107,6 +116,16 @@
         }
         h4 {
             font-size: 16px;
+        }
+    }
+    .box-home-proporcionamos {
+        &.en-prensa {
+            .raya-desktop {
+                display: block;
+            }
+            &:before {
+                display: none;
+            }
         }
     }
 }

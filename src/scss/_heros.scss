@@ -52,10 +52,39 @@
             stroke-miterlimit: 10;
         }
     }
+    .cuadrado {
+        fill:none;
+        stroke:#425ba9;
+        stroke-miterlimit:10;
+        stroke-width:0.37px;
+        z-index: 8;
+        width: 60px;
+        bottom: -30px;
+        right: 5%;
+        position: absolute;
+        display: none;
+    }
 }
 .hero-green {
     @extend .hero;
     background: $brand-secondary;
+    .medio-circulo {
+        path {
+            fill: $brand-primary;
+        }
+    }
+    .segundo-circulo {
+        circle {
+            fill: white;
+        }
+    }
+}
+.hero-gray {
+    @extend .hero;
+    background: $gray-light;
+    h1 {
+        color: $brand-primary;
+    }
     .medio-circulo {
         path {
             fill: $brand-primary;
@@ -72,11 +101,20 @@
     .hero {
         padding: 120px 0 80px 0;
     }
+    .hero {
+        h1 {
+            padding-left: 0;
+            text-align: center;
+            max-width: 70%;
+            @include center;
+        }
+    }
 }
 
 // 992px
 @media all and (min-width: $screen-landscape) {
     .hero {
+        .cuadrado,
         .segundo-circulo {
             display: block;
         }
@@ -98,9 +136,5 @@
 
 // 1200px
 @media all and (min-width: $screen-desktop) {
-    .hero {
-        h1 {
-            padding-left: 140px;
-        }
-    }
+    
 }
